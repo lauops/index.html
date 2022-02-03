@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("Montserrat-Bold.ttf") format("TrueType");
+}
+
+body {
+ background-image: url("toothbackground.jpg");
+ background-color: #cccccc;
+ height: 684px;
+ width: 1000px;
+}
+.smalltext {
+  font-family: "Montserrat-Bold";
+  text-align: "Montserrat-Bold";
+  color: black;
+  font-size: 20px;
+}
+.bigtext {
+  font-family: "Montserrat-Bold";
+  text-align: left;
+  color: LightBlue;
+  font-size: 5em;
+}
+
+#pot{
+  bottom: 15%;
+  position: absolute;
+ -webkit-animation: linear infinite alternate;
+ -webkit-animation-name: run;
+ -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+ 0% {
+   left: 0;
+ }
+ 0% {
+   left: 100%;
+ }
+ 100% {
+   left: 0;
+ }
+}

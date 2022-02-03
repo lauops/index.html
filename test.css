@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("Montserrat-Bold.ttf") format("TrueType");
+}
+
+body {
+  background-color: lightpink;
+}
+
+p {
+  font-family: "Montserrat-Bold";
+  font-size: 30px;
+  color: lightgreen;
+  text-align: left;
+  background-color: darkBlue;
+  text-shadow: 2px 2px 1px LightBlue;
+  }
+
+.bigtext {
+  font-family: "Montserrat-Bold";
+  text-align: left;
+  color: blue;
+  font-size: 5em;
+}
+.smalltext {
+  font-family: "Montserrat-Bold";
+  text-align: "Montserrat-Bold";
+  color: green;
+  font-size: 20px;
+}
