@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gotham";
+}
+
+body {
+    background-color: yellow;
+  }
+
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("Gotham-Bold.ttf") format("truetype");
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  text-align: left;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  background: azure;
+}
+
+.row {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+  }
+
+.left {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+  }
+
+.center {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+  }
+
+.right {
+  display: flex;
+  flex-flow: row;
+  flex:0.3;
+  }
+
+.topleft {
+  background-color: FloralWhite;
+  flex: 1;
+  }
+
+.topmiddle {
+  background-color: GreenYellow;
+  flex: 1;
+}
+
+.topright {
+  background-color: FloralWhite;
+  flex: 1;
+}
+
+.middleleft {
+  background-color: lightgrey;
+  flex: 1;
+  border: 3px solid grey;
+  margin: -0px;
+}
+
+.middlemiddle {
+  background-color: lightgrey;
+  flex: 1;
+  border: 3px solid grey;
+  margin: -0px;
+}
+
+.middleright {
+  background-color: lightgrey;
+  flex: 1;
+  border: 3px solid grey;
+  margin: -0px;
+}
+
+.bottomleft {
+  background-color: FloralWhite;
+  flex: 1;
+}
+
+.bottommiddle {
+  background-color: FloralWhite;
+  flex: 1;
+}
+
+.bottomright {
+  background-color: FloralWhite;
+  flex: 1;
+}
+.month {
+  background-color: #eeee;
+  color: GreenYellow;
+  size: 50px;
+  position: 40px;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .btn:hover {
+  background-color: #eee;
+}
